@@ -1,0 +1,31 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #f7f7f7;
+	line-height: 1.7;
+}
+
+.article-title {
+	color:  darkred;
+	letter-spacing: 1px;
+}
+.jumbotron {
+	background-image: url("../images/nasa.jpg");
+	background-size: 100% 100%;
+	width: 100%;
+}
+.navbar {
+	border-bottom: 0.01em solid grey;
+}
+.navbar-brand {
+	font-family: Montserrat;
+	font-size: 2rem;
+}
+.logo,
+.lead-title,
+i.bi {
+	color: rgb(126, 226, 46);
+
+}
+
+.table {
+}

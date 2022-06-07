@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>js</title>
+	<link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body class="bg-dark">
+	<!-- wrapper -->
+	<div class="wrapper">
+
+		<!-- navbar -->
+		<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark mb-5">
+			<a href="index.html" class="navbar-brand text-light">UFO<span class="logo"> Sightings</span></a>
+		</nav>
+
+		<!-- jumbotron -->
+		<div class="jumbotron text-center mt-5">
+			<h1 class="display-4 pt-3">The Truth Is Out There</h1>
+		</div>
+
+		<!-- article title and paragraph -->
+		<div class="container-fluid">
+			<div class="row">
+				<!-- article title -->
+				<div class="col-md-4 mt-5">
+					<h3 class="lead-title"><span>UFO Sightings: Fact or Fancy?</span> <small>Ufologists Weight In</small></h3>
+				</div>
+				<!-- lead paragraph -->
+				<div class="col-md-8">
+					<p class="lead">
+						Are we alone in the universe? For millennia, humans have turned to the sky to answer this question. Now, thanks to research generously funded by W. Avy, a UFO-enthusiast and amateur ufologist, we can supplement our sky-searching with data analysis.
+					</p>
+					<p>
+						"The release of this analysis is well-timed: It coincides with the celebration of World UFO Day, which is a moment for ufologists around the world to connect, relax, and sample a range of UFO-themed snacks," said Dr. Ursula F. Olivier, the world's preeminent expert on circular sightings. "Citizen-scientists can be especially helpful in both cataloguing sightings—which is hugely helpful for us in our search for aliens—and in helping us celebrate the work that has already been done, such as this data visualization project, which will help us raise awareness of the ubiquity of sightings!"
+					</p>
+					<p>
+						Not everyone is ready to celebrate, however. Local CEO and vocal anti-alien activist V. Isualize reached out to our reporters to go on record as firmly opposed to any attempts to provide access to this data. "If there are aliens, they certainly would like to be left alone," she stated, before directing us to the Leave Aliens Alone (LAA) community engagement initiative she founded and funds.
+					</p>
+					<p>
+						So what do YOU think? Are we alone in the universe? Are aliens trying to contact us, or do they want to be left alone? Dig through the data yourself, and let us know what you see.
+					</p>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<!-- filter search -->
+				<div class="col-md-3">
+					<form action="#" class="bg-dark" id="filter-form">
+						<div class="px-4">
+							<button id="refresh-btn" type="button" class="btn btn-outline-light btn-md mb-4">Refresh Table</button>
+							<p class="text-secondary mb-0 h5">Filter Search</p>
+						</div>
+						
+						<ul class="list-group bg-dark">
+							<!-- enter date -->
+							<li class="list-group-item bg-dark">
+								<label for="datetime">Enter Date</label>
+								<input type="text" class="form-control"
+									   name="datetime" 
+									   placeholder="date" 
+									   id="datetime"
+									   onfocus="this.value=''"
+									   >
+							</li>
+							<!-- enter city -->
+							<li class="list-group-item bg-dark">
+								<label for="city">Enter City</label>
+								<input type="text" 
+									   class="form-control" 
+									   name="city" 
+									   placeholder="city name" 
+									   id="city" 
+									   onfocus="this.value=''"
+									   onfocus="this.placeholder=''"
+									   >
+							</li>
+							<!-- enter state -->
+							<li class="list-group-item bg-dark">
+								<label for="state">Enter State</label>
+								<input type="text" 
+									   class="form-control" 
+									   name="state" 
+									   placeholder="state" 
+									   id="state"
+									   onfocus="this.value=''"
+									   >
+							</li>
+							<!-- enter country -->
+							<li class="list-group-item bg-dark">
+								<label for="country">Enter Country</label>
+								<input type="text" 
+									   class="form-control" 
+									   name="country" 
+									   placeholder="country" 
+									   id="country"
+									   onfocus="this.value=''"
+									   >
+							</li>
+							<!-- enter shape -->
+							<li class="list-group-item bg-dark">
+								<label for="shape">Enter Shape</label>
+								<input type="text" 
+									   class="form-control" 
+									   name="shape" 
+									   placeholder="ufo shape" 
+									   id="shape"
+									   onfocus="this.value=''"   
+									   >
+							</li>
+						</ul>
+				 	</form>
+				</div>
+				<div class="col-md-9">
+					<table class="table table-striped table-hover table-sm table-respnosive">
+						<thead>
+							<tr>
+								<th class="th-sm">Date</th>
+								<th class="th-sm">City</th>
+								<th class="th-sm">State</th>
+								<th class="th-sm">Country</th>
+								<th class="th-sm">Shape</th>
+								<th class="th-sm">Duration</th>
+								<th class="th-sm">Comments</th>
+							</tr>
+						</thead> 	
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<footer class="p-5 bg-dark text-white text-center position-relative">
+		<div class="container">
+			<p class="lead">Copyright &copy 2022 ufosightings</p>
+			<a href="#" class="postion-absolute bottom-0 end-0 p-5">
+				<i class="bi bi-arrow-up-circle h1"></i>
+			</a>
+		</div>
+	</footer>
+
+
+
+	<!-- javascript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+	<script src="static/js/data.js"></script>
+	<script src="static/js/ufoStarterCode.js"></script>
+	<!-- <script src="static/js/main.js"></script> -->
+	<!-- <script src="static/js/app.js"></script> -->
+</body>
+</html>
