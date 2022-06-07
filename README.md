@@ -1,5 +1,5 @@
 ## Overview of Project: 
-- The main goal of this analysis is to include multiple criteria to filter the UFO sightings table in order to allow users be able to tailer their search.
+- The main goal of this project is to include multiple criteria to filter the UFO sightings table in order to allow users be able to tailer their search.
 
 ## Results: 
 - Now the UFO sightings webpage allows you to filter the sightings table using date, city name, state, country and even the shape of the sighting. That is a huge convenience for users. 
